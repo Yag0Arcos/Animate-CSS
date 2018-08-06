@@ -1,0 +1,414 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700';
+
+/* GLOBAL STYLES*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer {
+    padding: 10px 30px 5px 30px;
+    background-color: #ee3124;
+    color: white;
+    text-align: center;
+}
+
+footer a,
+footer p a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* NAVBAR
+-------------------------------------------------- */
+
+.navbar-wrapper {
+    font-family: 'Ubuntu', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar-wrapper>.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+.navbar .navbar-nav {
+    display: inline-block!important;
+    float: none!important;
+}
+
+.navbar .navbar-collapse {
+    text-align: center!important;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.carousel-caption {
+    z-index: 10;
+}
+
+.carousel .item {
+    background-color: #777;
+}
+
+.carousel-inner>.item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+.marketing {
+    text-align: center;
+}
+
+.marketing .col-lg-4 {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h1 {
+    color: #ee3124;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.marketing h2 {
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ee3124;
+}
+
+.marketing .col-lg-4 p {
+    color: #606060;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.sub-brief {
+    color: #606060;
+    font-weight: 200;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.featurette-text {
+    margin-top: 25px;
+    color: #606060;
+}
+
+
+/*CONTACT FORM*/
+
+.style-form {
+    padding-top: 15px;
+}
+
+.control-efflex {
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+    color: #303841;
+    background-color: white;
+    border: 1px solid #303841;
+    border-radius: 2px;
+}
+
+::-webkit-input-placeholder {
+    color: #303841;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #303841;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #303841;
+}
+
+:-ms-input-placeholder {
+    color: #303841;
+}
+
+
+/* RESPONSIVE
+-------------------------------------------------- */
+
+
+/*Desktop*/
+
+@media screen and (min-width: 769px) {
+    .navbar-wrapper .container {
+        width: 100%!important;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+    .big-subtitle-secondary {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 50px!important;
+        text-transform: uppercase;
+        color: #606060;
+    }
+    .big-subtitle-secondary-1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px!important;
+    }
+    .logo-custom {
+        width: 110px;
+    }
+    /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+    .carousel {
+        font-family: 'Ubuntu', sans-serif;
+        height: 900px;
+        margin-bottom: 60px;
+        margin-top: 53px;
+    }
+    .carousel .item {
+        height: 900px;
+    }
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .hide-desktop {
+        display: none!important;
+    }
+    .contact-map {
+        height: 429px;
+    }
+    .provisional {
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        padding-top: 700px;
+        width: 900px;
+        font-weight: 300;
+    }
+}
+
+
+/*iPhone*/
+
+@media screen and (max-width: 414px) {
+    .navbar-wrapper {}
+    /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+    .carousel {
+        margin-top: 50px;
+        height: 400px!important;
+    }
+    .carousel .item {
+        height: 400px!important;
+    }
+    .navbar-inverse .navbar-toggle {
+        background-color: #ee3124;
+    }
+    .logo-custom {
+        width: 75px;
+    }
+    .carousel {
+        font-family: 'Ubuntu', sans-serif;
+        height: 700px;
+        margin-bottom: 60px;
+    }
+    .carousel .item {
+        height: 700px;
+    }
+    .hide-thing {
+        display: none;
+    }
+    .big-subtitle-secondary {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 35px!important;
+        text-transform: uppercase;
+        color: #606060;
+        text-align: center;
+    }
+    .featurette-text {
+        text-align: center;
+        font-size: 14px!important;
+    }
+    .featurette-divider {
+        margin: 20px 0!important;
+    }
+    /*    footer---------------------------------------*/
+    footer a {
+        color: white;
+        text-decoration: none;
+        font-size: small;
+    }
+    .contact-map {
+        height: 300px;
+    }
+    .bg-slide1 {
+        background-position: center;
+        background-size: 414px;
+    }
+    .hide-talent {
+        display: none;
+    }
+    .provisional {
+        text-align: center;
+        font-size: 16px;
+        color: white;
+        width: 100%;
+        padding: 264px 30px 0 30px;
+        font-weight: 300;
+    }
+}
+
+
+/*iPad*/
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+    .carousel-inner>.item>img {
+        width: 100%;
+    }
+    .logo-custom {
+        width: 100px;
+    }
+    .carousel {
+        font-family: 'Ubuntu', sans-serif;
+        height: 433px;
+        margin-bottom: 60px;
+    }
+    .carousel .item {
+        height: 433px;
+    }
+    .hide-desktop {
+        display: none!important;
+    }
+    .big-subtitle-secondary {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 32px!important;
+        text-transform: uppercase;
+        color: #606060;
+        text-align: center;
+    }
+    .featurette-text {
+        text-align: center;
+        padding: 0 75px!important;
+        font-size: 15px!important;
+    }
+    .featurette-divider {
+        margin: 40px 0!important;
+    }
+    .contact-map {
+        height: 414px;
+    }
+    .marketing p {
+        margin-right: 90px!important;
+        margin-left: 90px!important;
+    }
+    .provisional {
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        padding-top: 335px;
+        width: 433px;
+        font-weight: 300;
+    }
+}
+
+
+/*Big mobile*/
+
+@media screen and (min-width: 321px) and (max-width: 415px) {
+    .big-image {
+        display: none!important;
+    }
+    .medium-image {
+        display: inline!important;
+    }
+    .small-image {
+        display: none!important;
+    }
+}
+
+
+/*Small mobile*/
+
+@media screen and (max-width: 320px) {
+    .big-image {
+        display: none!important;
+    }
+    .medium-image {
+        display: none!important;
+    }
+    .small-image {
+        display: inline!important;
+    }
+}
+
+@media screen and (min-width: 416px) {
+    .big-image {
+        display: inline!important;
+    }
+    .medium-image {
+        display: none!important;
+    }
+    .small-image {
+        display: none!important;
+    }
+}
+
+
+/*END: Hero image fixing*/

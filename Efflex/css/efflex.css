@@ -1,0 +1,18 @@
+/*modified styles for Eflex Website
+
+Badmash Studio September 2016*/
+
+/*Desktop*/
+@media screen and (min-width: 768px) {
+
+}
+
+/*iPhone*/
+@media screen and (max-width: 414px) {
+
+}
+
+/*iPad*/
+@media screen and (min-width: 415px) and (max-width: 768px) {
+
+}

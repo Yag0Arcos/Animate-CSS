@@ -1,0 +1,185 @@
+.ycp {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #444;
+    background: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+		margin-bottom: 5px;
+		font-family: 'Ubuntu';
+}
+.ycp span.tombol {
+    margin-right: 20px;
+}
+.ycp span.about {
+    float: right;
+    background: #111111;
+    padding: 2px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.ycp a {
+    text-decoration: none;
+}
+.ycp a img {
+    border: 0;
+}
+.ycp .unit {
+    box-sizing: border-box;
+}
+.ycp .katuhu {
+    width: 35%;
+}
+.ycp .kenca {
+    width: 65%;
+}
+.ycp .thumb {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    height: 61px;
+    background: #4a4a4a;
+}
+.ycp .thumb span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 2px;
+    background: #000;
+    color: #cacaca;
+    font-size: 0.8em;
+}
+.ycp .play {
+    margin: 0;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    *overflow: visible;
+}
+.ycp .vid-top {
+    color: #fff;
+    background: #1a1a1a;
+    border-bottom: 1px solid #111;
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+    *overflow: visible;
+}
+.ycp .vid-bottom {
+    color: #cacaca;
+    background: #222;
+    display: block;
+    overflow-y: scroll;
+    height: 435px;
+}
+.ycp div.title-youtube {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.ycp span.mute, .ycp span.about a {
+    color: #767676;
+    font-size: 0.8em;
+}
+.ycp .thumb img {
+    width: 80px;
+    height: 100%;
+}
+.ycp .play:hover {
+    background: #4a4a4a;
+}
+.ycp .vid-active {
+    background: #3a3a3a;
+}
+.ycp .vid-prev, .ycp .vid-next, .ycp .play {
+    cursor: pointer;
+}
+.ycp .vid-iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+}
+@media screen and (max-width:767px) {
+    .ycp .katuhu {
+        width: 100%;
+    }
+    .ycp .kenca {
+        width: 100%;
+    }
+    .ycp .vid-iframe {
+        height: 350px;
+    }
+    .ycp .vid-bottom {
+        height: 285px;
+    }
+    ;
+}
+.ante{
+	color:#d8282a;
+}
+
+@media (min-width:769px) {
+	.back-video {
+	    min-height: 250px;
+	    background-image: url("../images/impressa-video.png");
+	    background-repeat: no-repeat;
+	    background-position: right top;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #E0E0E0;
+	}
+	.video-title{
+		font-family: 'Ubuntu';
+		font-size: 60px;
+		color:#d8282a;
+		letter-spacing: -3px;
+	}
+	.seccion-subtitle{
+		font-family: 'Ubuntu';
+		font-size: 14px;
+	}
+	.ycp {
+			margin-bottom: 30px!important;
+	}
+}
+@media screen and (min-width:415px) and (max-width:768px) {
+	.back-video {
+	    min-height: 200px;
+	    background-image: url("../images/impressa-video-ipad.png");
+	    background-repeat: no-repeat;
+	    background-position: right top;
+			margin-bottom: 5px;
+			border-bottom: 1px solid #E0E0E0;
+	}
+	.video-title{
+		font-family: 'Ubuntu';
+		font-size: 60px;
+		color:#d8282a;
+		letter-spacing: -3px;
+	}
+	.video-subtitle{
+		font-family: 'Ubuntu';
+		font-size: 14px;
+	}
+}
+@media (max-width:414px) {
+	.back-video {
+	    height: 150px;
+	}
+	.video-title{
+		text-align: center;
+		font-family: 'Ubuntu';
+		font-size: 60px;
+		color:#d8282a;
+		letter-spacing: -3px;
+	}
+	.video-subtitle{
+		text-align: center;
+		font-family: 'Ubuntu';
+		font-size: 14px;
+	}
+}

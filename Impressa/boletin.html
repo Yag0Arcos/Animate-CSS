@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="Impressa es una empresa especializada en Diseño e Impresión de Folletos, Revistas, Etiquetas, Posters, Boletos, Volantes, Cajas y todo Tipo de papelería en general">
+    <meta name="keywords" content="Impressa, impressa.com, impressa.com.mx, impressa.mx, el impresso, impresso, impresso.com, impresso.com.mx, grupo impressa, impresso.mx, impresora de productos especiales, imprenta, sistemas de impresión, técnicas de impresión, artes gráficas, premio nacional de las artes gráficas, etiquetas con procesos especiales, offset, serigrafía, flexografía, hot stamping, barniz uv, suaje, papelería, etiquetas, empaques, empaques farmacéuticos, libros y revistas, encuadernación, estampado, hot stamping, premio nacional de artes graficas, premio nacional de artes graficas 2014, cal-c-toce">
+    <meta name="description" content="En Impressa somos más que una imprenta, brindamos a nuestros clientes asesoría en sistemas y técnicas de impresión y ofrecemos una amplia gama de productos.">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Impressa</title>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/modernizr.js"></script>
+    <!-- Resource style -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--    my styles-->
+    <link rel="stylesheet" href="css/mystyles.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON("data/impresso.json", function (data) {
+                var impressos = '';
+                var first = '';
+                $.each(data, function (key, val) {
+                    impressos += '<div class="col-lg-3 col-md-3 col-sm-6 gallery-fit">';
+                    impressos += '<a href="' + val.pdf + '" target="_blank"><img class="gallery-fit2" src="' + val.image + '"></a>';
+                    impressos += '</div>';
+                    if (key === 0){
+                      first += '<div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">';
+                      first += '<a href="' + val.pdf + '"><img class="size-latest" src="' + val.image + '" alt=""></a>';
+                      first += '</div>';
+                    }
+                });
+                $("#impressos").html(impressos);
+                $("#first").html(first);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">IMPRESSA</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li> <a class="menu-color logo-menu" href="index.html">impressa</a> </li>
+                    <li> <a href="servicios.html">Servicios</a> </li>
+                    <li> <a href="gallery.html">Galería</a> </li>
+                    <li> <a href="clientes.html">Clientes</a> </li>
+                    <li class="active menu-line"> <a href="boletin.html">Publicaciones</a> </li>
+                    <li> <a href="rewards.html">Reconocimientos</a> </li>
+                    <li> <a href="blog.html">Blog</a> </li>
+                    <li> <a href="video.html">Videos</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container top-space">
+        <div class="row edit-row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">
+               <h2 class="big-subtitle title-video">Publicación mensual</h2>
+                <h3 class="big-subtitle title-services1"><img src="images/impresso.png" style="width:100%" alt=""></h3>
+                <div class="col-lg-12 seccion-subtitle1"> Compartir información, le da el poder a la gente </div>
+            </div>
+            <div id="first"></div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <!--    part one-->
+    <div class="row section-fix3">
+        <div class="col-lg-12 col-md-12 col-sm-12 gallery-fix-width">
+            <h2 style="text-align:center"></h2>
+            <div class="row">
+                <div id="impressos"></div>
+                <!-- <div class="col-lg-3 col-md-3 col-sm-6 gallery-fit">
+                        <img class="gallery-fit2" src="images/gallery/boletin.PNG">
+                        <div class="title"></div>
+                    </div> --></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- .cd-comment-slider -->
+    <!--   section part two-->
+    <!--    footer and contact-->
+   <section class="footer fix-landing-footer">
+        <div class="row row-fix">
+            <div class="container">
+                <h3 class="contac-text text-contac">
+                        <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                        Búscanos también en nuestras redes sociales</h3>
+
+                <div class="adress-fon col-lg-6"> <img src="images/whitelogo.png" alt=""><div>Impresora De Productos Especiales, S.A. De C.V.</div> <br>
+                   <i class="fa fa-map-signs" aria-hidden="true"></i> &nbsp; Guido Renni #56 esq Franz Hals Colonia Alfonso XIII
+                    <br>Mexico DF,C.P. 01460 Del. Álvaro Obregón. </div>
+                <div class="adress-fon col-lg-6">
+                 <ul class="icon-fix">
+                    <li> <a href="https://twitter.com/impressa_mx"><i class="fa fa fa-twitter fa-3x social-icons" aria-hidden="true"></i> </a></li>
+                    <li> <a href="https://www.facebook.com/impressa.com.mx"><i class="fa fa-facebook fa-3x social-icons s-icon1" aria-hidden="true"></i></a> </li>
+                    <li> <a href="https://www.youtube.com/channel/UCby3grHg5LmGdMW-JXe_Hvg"><i class="fa fa-youtube fa-3x social-icons s-icon2" aria-hidden="true"></i></a> </li>
+                    <li> <a href="https://www.linkedin.com/company/impresora-de-productos-especiales"><i class="fa fa-linkedin fa-3x social-icons s-icon3" aria-hidden="true"></i></a> </li>
+                </ul><br>
+                  <i class="fa fa-phone" aria-hidden="true"></i> &nbsp; Tel. 3095 3313</div>
+            </div>
+        </div>
+        <br>
+        <div class="row row-fix">
+            <div class="col-lg-12">
+                <ul class="copyright">
+                    <li>&copy; Copyright 2014 Impressa todos los derechos reservados</li>
+                    <!--                    <li>Design: <a class="copy-edit" href="http://bmstudio.mx"> &nbsp; Badmash</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

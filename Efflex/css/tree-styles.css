@@ -1,0 +1,177 @@
+/*Desktop*/
+
+@media screen and (min-width: 769px) {
+    .bg-slide1 {
+        background-image: url('../img/slide3.png');
+        background-position: center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+    .logo-container {
+        width: 900px;
+        height: 900px;
+        margin: auto;
+        background-image: url('../img/tronco.png');
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .circle-text {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+    .circle {
+        width: 149px;
+        height: 149px;
+        background-color: #ee3124;
+        border-radius: 15%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .circle-1 {
+        top: 100.5px;
+        left: 537.5px;
+        background-image: url(img/red.png)
+    }
+    .circle-2 {
+        top: 66.5px;
+        left: 375.5px;
+    }
+    .circle-3 {
+        top: 128.5px;
+        left: 210.5px;
+    }
+    .circle-4 {
+        left: 705.5px;
+        top: 535.5px;
+    }
+    .circle-5 {
+        left: 155.5px;
+        top: 485.5px;
+    }
+    .circle-6 {
+        left: 33.5px;
+        top: 327.5px;
+    }
+    .circle-7 {
+        left: 667.5px;
+        top: 285.5px;
+    }
+    .circle-8 {
+        left: 231.5px;
+        top: 297.5px;
+    }
+    .circle-9 {
+        left: 540.5px;
+        top: 478.5px;
+    }
+    .circle-10 {
+        left: 307.5px;
+        top: 623.5px;
+    }
+    .circle-11{
+        left:445.5px;
+        top:265.5px;
+    }
+    .circle-12{
+        left:370.5px;
+        top:451.5px;
+    }
+}
+
+
+/*iPhone*/
+
+@media screen and (max-width: 414px) {}
+
+
+/*iPad*/
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    .fix-margin-ipad{
+            margin-top: 55px;
+    }
+    .bg-slide1 {
+        background-image: url('../img/slide1.png');
+        background-position: center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+    .logo-container {
+        width: 433px;
+        height: 433px;
+        margin: auto;
+        background-image: url('../img/tronco.png');
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+                position: relative;
+
+    }
+    .circle-text {
+        color: #fff;
+        font-size: 11px;
+        text-align: center;
+        width: 100%;
+    }
+    .circle {
+        width: 85px;
+        height: 85px;
+        background-color: #ee3124;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+    .circle-1 {
+        top: 11.5px;
+        left: 180.5px;
+    }
+    .circle-2 {
+        top: 47.5px;
+        left: 269.5px;
+    }
+    .circle-3 {
+        top: 57.5px;
+        left: 83.5px;
+    }
+    .circle-4 {
+        left: 340.5px;
+        top: 114.5px;
+    }
+    .circle-5 {
+        left: 169.5px;
+        top: 100.5px;
+    }
+    .circle-6 {
+        left: 9.5px;
+        top: 122.5px;
+    }
+    .circle-7 {
+        left: 253.5px;
+        top: 137.5px;
+    }
+    .circle-8 {
+        left: 95.5px;
+        top: 152.5px;
+    }
+    .circle-9 {
+        left: 317.5px;
+        top: 204.5px;
+    }
+    .circle-10 {
+        left: 19.5px;
+        top: 211.5px;
+    }
+}
+.hide-logo{
+    display: none;
+}
+.show-logo{
+    display: inline-block;
+}
